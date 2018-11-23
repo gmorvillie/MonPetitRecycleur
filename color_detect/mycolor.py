@@ -2,7 +2,8 @@ from sklearn.cluster import KMeans
 import cv2 #openCV works with BGR 
 import numpy as np
 
-image = cv2.imread("image/color_plat.jpg")
+image = cv2.imread("image/brown_plate.jpg")
+
 cv2.imshow('original',image)
 cv2.waitKey(0)
 
@@ -33,6 +34,11 @@ for indice, valeur in enumerate(listed):
 #print(image2)
 image3 = image2.reshape(image.shape[0], image.shape[1], 3)
 image3 = cv2.cvtColor(image3, cv2.COLOR_RGB2BGR)
+
+def gaussian(image):
+	for i in range(0,1):
+	image = cv.GaussianBlur(im,(3,3),0)
+	return image
 
 
 #print(image3)
