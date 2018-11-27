@@ -11,12 +11,12 @@ def resize():
         i = i +1
         
         #if os.path.isfile(path+item):
-        print("bonn")
+        #print("bonn")
         im = Image.open(path+item)
         width, height = im.size
         f, e = os.path.splitext(path+item)
         imResize = im.resize((int(width/5),int(height/5)), Image.ANTIALIAS)
-        print("f " +f)
-        imResize.save(path + 'resized-'+str(i)+e, 'JPEG', quality=90)
+        #print("f " +f)
+        imResize.save(f+e, 'JPEG', quality=90)
 
 resize()
