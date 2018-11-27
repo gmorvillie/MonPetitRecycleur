@@ -15,6 +15,6 @@ def resize():
         width, height = im.size
         f, e = os.path.splitext(path+item)
         imResize = im.resize((int(width/5),int(height/5)), Image.ANTIALIAS)
-        imResize.save(f+'-resized.jpg', 'JPEG', quality=90)
+        imResize.save('resized'+f+'.jpg', 'JPEG', quality=90)
 
 resize()
