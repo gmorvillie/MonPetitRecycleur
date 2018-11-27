@@ -1,0 +1,26 @@
+<annotation>
+	<folder>resize</folder>
+	<filename>IMG_20181127_124349.jpg</filename>
+	<path>/home/marien/Documents/MonPetitRecycleur/resize/IMG_20181127_124349.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>595</width>
+		<height>793</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>orga</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>69</xmin>
+			<ymin>323</ymin>
+			<xmax>315</xmax>
+			<ymax>513</ymax>
+		</bndbox>
+	</object>
+</annotation>

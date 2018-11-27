@@ -1,0 +1,50 @@
+<annotation>
+	<folder>New Folder</folder>
+	<filename>P_20181127_125014.jpg</filename>
+	<path>/home/guillaume/MonPetitRecycleur/LabelImg/New Folder/P_20181127_125014.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>819</width>
+		<height>460</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>orga</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>428</xmin>
+			<ymin>239</ymin>
+			<xmax>539</xmax>
+			<ymax>372</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>orga</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>549</xmin>
+			<ymin>251</ymin>
+			<xmax>612</xmax>
+			<ymax>340</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>trash</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>85</xmin>
+			<ymin>262</ymin>
+			<xmax>357</xmax>
+			<ymax>397</ymax>
+		</bndbox>
+	</object>
+</annotation>
