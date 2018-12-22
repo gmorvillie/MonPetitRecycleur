@@ -7,6 +7,7 @@ import sys
 import tarfile
 import tensorflow as tf
 import zipfile
+import cv2
 
 from collections import defaultdict
 from io import StringIO
@@ -118,9 +119,12 @@ if __name__ == "__main__":
     IMAGE_SIZE = (96, 64)
 
     # take a webcam photo
-    subprocess.check_output(['ffmpeg','-f', 'video4linux2', '-s', '640x480', '-i', '/dev/video0', '-ss', '0:0:2', '-frames', '1', 'detect_one_image/out.jpg'])
+    video_capture = cv2.VideoCapture(0)
+    _, frame = video_capture.read()
+    frame = cv2.cvtColor(frame,cv2.COLOR_BGR2RGB)
+    image = Image.fromarray(frame);
+
     # process it
-    image = Image.open('detect_one_image/out.jpg')
     image_np = load_image_into_numpy_array(image)
     image_np_expanded = np.expand_dims(image_np, axis=0)
     output_dict = run_inference_for_single_image(image_np, detection_graph)
