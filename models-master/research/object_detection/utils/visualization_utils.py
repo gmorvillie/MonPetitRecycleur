@@ -40,10 +40,10 @@ from object_detection.core import standard_fields as fields
 _TITLE_LEFT_MARGIN = 10
 _TITLE_TOP_MARGIN = 10
 STANDARD_COLORS = [
-    'AliceBlue', 'Chartreuse', 'Aqua', 'Aquamarine', 'Azure', 'Beige', 'Bisque',
+     'Chartreuse',  'DarkGrey','Aqua', 'Aquamarine', 'Azure', 'Beige', 'Bisque',
     'BlanchedAlmond', 'BlueViolet', 'BurlyWood', 'CadetBlue', 'AntiqueWhite',
     'Chocolate', 'Coral', 'CornflowerBlue', 'Cornsilk', 'Crimson', 'Cyan',
-    'DarkCyan', 'DarkGoldenRod', 'DarkGrey', 'DarkKhaki', 'DarkOrange',
+    'DarkCyan', 'DarkGoldenRod','AliceBlue', 'DarkKhaki', 'DarkOrange',
     'DarkOrchid', 'DarkSalmon', 'DarkSeaGreen', 'DarkTurquoise', 'DarkViolet',
     'DeepPink', 'DeepSkyBlue', 'DodgerBlue', 'FireBrick', 'FloralWhite',
     'ForestGreen', 'Fuchsia', 'Gainsboro', 'GhostWhite', 'Gold', 'GoldenRod',
@@ -172,8 +172,9 @@ def draw_bounding_box_on_image(image,
     (left, right, top, bottom) = (xmin, xmax, ymin, ymax)
   draw.line([(left, top), (left, bottom), (right, bottom),
              (right, top), (left, top)], width=thickness, fill=color)
+  font = ImageFont.load_default()
   try:
-    font = ImageFont.truetype('arial.ttf', 60)
+    font = ImageFont.truetype('usr/share/fonts/truetype/liberation/LiberationMono-Bold.ttf', 60)
   except IOError:
     font = ImageFont.load_default()
 
