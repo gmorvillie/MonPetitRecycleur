@@ -40,7 +40,7 @@ from object_detection.core import standard_fields as fields
 _TITLE_LEFT_MARGIN = 10
 _TITLE_TOP_MARGIN = 10
 STANDARD_COLORS = [
-     'Aqua', 'DarkGrey', 'SpringGreen', 'Aquamarine', 'Azure', 'Beige', 'Bisque',
+     'Aqua', 'DarkGrey', 'Olive', 'Aquamarine', 'Azure', 'Beige', 'Bisque',
     'BlanchedAlmond', 'BlueViolet', 'BurlyWood', 'CadetBlue', 'AntiqueWhite',
     'Chocolate', 'Coral', 'CornflowerBlue', 'Cornsilk', 'Crimson', 'Cyan',
     'DarkCyan', 'DarkGoldenRod','AliceBlue', 'DarkKhaki', 'DarkOrange',
@@ -55,7 +55,7 @@ STANDARD_COLORS = [
     'LimeGreen', 'Linen', 'Magenta', 'MediumAquaMarine', 'MediumOrchid',
     'MediumPurple', 'MediumSeaGreen', 'MediumSlateBlue', 'MediumSpringGreen',
     'MediumTurquoise', 'MediumVioletRed', 'MintCream', 'MistyRose', 'Moccasin',
-    'NavajoWhite', 'OldLace', 'Olive', 'OliveDrab', 'Orange', 'OrangeRed',
+    'NavajoWhite', 'OldLace',  'OliveDrab', 'Orange', 'OrangeRed',
     'Orchid', 'PaleGoldenRod', 'PaleGreen', 'PaleTurquoise', 'PaleVioletRed',
     'PapayaWhip', 'PeachPuff', 'Peru', 'Pink', 'Plum', 'PowderBlue', 'Purple',
     'Red', 'RosyBrown', 'RoyalBlue', 'SaddleBrown', 'Green', 'SandyBrown',
@@ -174,7 +174,7 @@ def draw_bounding_box_on_image(image,
              (right, top), (left, top)], width=thickness, fill=color)
   
   try:
-    font = ImageFont.truetype(font='usr/share/fonts/truetype/liberation/LiberationMono-Bold.ttf',size= 30)
+    font = ImageFont.truetype(font='usr/share/fonts/truetype/liberation/LiberationMono-Bold.ttf',size= 20)
   except IOError:
     font = ImageFont.load_default()
 
@@ -552,7 +552,7 @@ def visualize_boxes_and_labels_on_image_array(
     keypoints=None,
     use_normalized_coordinates=False,
     max_boxes_to_draw=20,
-    min_score_thresh=.5,
+    min_score_thresh=.7,
     agnostic_mode=False,
     line_thickness=4,
     groundtruth_box_visualization_color='black',
