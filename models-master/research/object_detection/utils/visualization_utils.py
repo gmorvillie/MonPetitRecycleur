@@ -172,9 +172,9 @@ def draw_bounding_box_on_image(image,
     (left, right, top, bottom) = (xmin, xmax, ymin, ymax)
   draw.line([(left, top), (left, bottom), (right, bottom),
              (right, top), (left, top)], width=thickness, fill=color)
-  font = ImageFont.load_default()
+  
   try:
-    font = ImageFont.truetype('usr/share/fonts/truetype/liberation/LiberationMono-Bold.ttf', 60)
+    font = ImageFont.truetype(font='usr/share/fonts/truetype/liberation/LiberationMono-Bold.ttf',size= 60)
   except IOError:
     font = ImageFont.load_default()
 
