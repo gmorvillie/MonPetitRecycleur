@@ -40,7 +40,7 @@ from object_detection.core import standard_fields as fields
 _TITLE_LEFT_MARGIN = 10
 _TITLE_TOP_MARGIN = 10
 STANDARD_COLORS = [
-     'SpringGreen', 'DarkGrey','Aqua', 'Aquamarine', 'Azure', 'Beige', 'Bisque',
+     'Aqua', 'DarkGrey', 'SpringGreen', 'Aquamarine', 'Azure', 'Beige', 'Bisque',
     'BlanchedAlmond', 'BlueViolet', 'BurlyWood', 'CadetBlue', 'AntiqueWhite',
     'Chocolate', 'Coral', 'CornflowerBlue', 'Cornsilk', 'Crimson', 'Cyan',
     'DarkCyan', 'DarkGoldenRod','AliceBlue', 'DarkKhaki', 'DarkOrange',
