@@ -40,7 +40,7 @@ from object_detection.core import standard_fields as fields
 _TITLE_LEFT_MARGIN = 10
 _TITLE_TOP_MARGIN = 10
 STANDARD_COLORS = [
-     'Chartreuse',  'DarkGrey','Aqua', 'Aquamarine', 'Azure', 'Beige', 'Bisque',
+     'SpringGreen', 'DarkGrey','Aqua', 'Aquamarine', 'Azure', 'Beige', 'Bisque',
     'BlanchedAlmond', 'BlueViolet', 'BurlyWood', 'CadetBlue', 'AntiqueWhite',
     'Chocolate', 'Coral', 'CornflowerBlue', 'Cornsilk', 'Crimson', 'Cyan',
     'DarkCyan', 'DarkGoldenRod','AliceBlue', 'DarkKhaki', 'DarkOrange',
@@ -60,7 +60,7 @@ STANDARD_COLORS = [
     'PapayaWhip', 'PeachPuff', 'Peru', 'Pink', 'Plum', 'PowderBlue', 'Purple',
     'Red', 'RosyBrown', 'RoyalBlue', 'SaddleBrown', 'Green', 'SandyBrown',
     'SeaGreen', 'SeaShell', 'Sienna', 'Silver', 'SkyBlue', 'SlateBlue',
-    'SlateGray', 'SlateGrey', 'Snow', 'SpringGreen', 'SteelBlue', 'GreenYellow',
+    'SlateGray', 'SlateGrey', 'Snow',  'SteelBlue', 'GreenYellow',
     'Teal', 'Thistle', 'Tomato', 'Turquoise', 'Violet', 'Wheat', 'White',
     'WhiteSmoke', 'Yellow', 'YellowGreen'
 ]
@@ -174,7 +174,7 @@ def draw_bounding_box_on_image(image,
              (right, top), (left, top)], width=thickness, fill=color)
   
   try:
-    font = ImageFont.truetype(font='usr/share/fonts/truetype/liberation/LiberationMono-Bold.ttf',size= 60)
+    font = ImageFont.truetype(font='usr/share/fonts/truetype/liberation/LiberationMono-Bold.ttf',size= 30)
   except IOError:
     font = ImageFont.load_default()
 
