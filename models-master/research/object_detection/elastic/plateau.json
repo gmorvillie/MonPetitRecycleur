@@ -1,0 +1,20 @@
+{
+"date": "2019-01-16 11:54:32.785126", 
+"boxes": [
+{
+"idBoite": 0, 
+"score": 0.9, 
+"typeDechet": 1
+}, 
+{
+"idBoite": 1, 
+"score": 0.8, 
+"typeDechet": 2
+}, 
+{
+"idBoite": 2, 
+"score": 0.9, 
+"typeDechet": 1
+}
+]
+}

@@ -1,0 +1,26 @@
+<annotation>
+	<folder>resize</folder>
+	<filename>IMG_20181127_125117.jpg</filename>
+	<path>/home/marien/Documents/MonPetitRecycleur/resize/IMG_20181127_125117.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>793</width>
+		<height>595</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>trash</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>513</xmin>
+			<ymin>341</ymin>
+			<xmax>670</xmax>
+			<ymax>427</ymax>
+		</bndbox>
+	</object>
+</annotation>

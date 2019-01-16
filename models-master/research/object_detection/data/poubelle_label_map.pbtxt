@@ -1,0 +1,8 @@
+item {
+  id: 1
+  name: 'Poubelle Grise'
+}
+item {
+  id: 2
+  name: 'Poubelle Verte'
+}
