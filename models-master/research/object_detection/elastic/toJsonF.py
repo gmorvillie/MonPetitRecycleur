@@ -13,12 +13,12 @@ def toJson(boxes, classes, scores, name = 'plateau.json'):
 		
 		d.append({  
 			'idBoite': i, #int
-			'typeDechet': classes[i], #int
-			'score': scores[i] #float
+			'typeDechet': (int)classes[i], #int
+			'score': (float)scores[i] #float
 	})
 	
 	plateau['boxes'] = d
-	plateau.tolist()
+	
 	with open('plateau.json', 'w') as outfile:  
 		json.dump(plateau, outfile, indent = 0)	
 		outfile.write("\n")
