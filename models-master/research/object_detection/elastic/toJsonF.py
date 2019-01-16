@@ -18,7 +18,7 @@ def toJson(boxes, classes, scores, name = 'plateau.json'):
 	})
 	
 	plateau['boxes'] = d
-	
+	plateau.tolist()
 	with open('plateau.json', 'w') as outfile:  
 		json.dump(plateau, outfile, indent = 0)	
 		outfile.write("\n")
