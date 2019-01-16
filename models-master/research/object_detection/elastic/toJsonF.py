@@ -13,8 +13,8 @@ def toJson(boxes, classes, scores, name = 'plateau.json'):
 		
 		d.append({  
 			'idBoite': i, #int
-			'typeDechet': (int)classes[i], #int
-			'score': (float)scores[i] #float
+			'typeDechet': classes[i], #int
+			'score': scores[i] #float
 	})
 	
 	plateau['boxes'] = d
