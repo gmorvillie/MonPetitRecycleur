@@ -1,5 +1,6 @@
 import json
 import numpy as np
+import datetime
 
 
 def toJson(boxes, classes, scores, name = 'plateau.json'):
@@ -13,7 +14,7 @@ def toJson(boxes, classes, scores, name = 'plateau.json'):
 		plateau['boxes'].append({  
 			'idBoite': i, #int
 			'typeDechet': classes[i], #int
-			'score': scores[i] #int
+			'score': scores[i] #float
 	})
 
 	with open('plateau.json', 'w') as outfile:  
