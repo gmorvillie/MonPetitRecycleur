@@ -1,5 +1,6 @@
 import json
 import numpy as np
+import datetime
 
 
 
@@ -8,22 +9,24 @@ classesEX = np.array([1, 2, 1]) #orga trash orga
 scoresEX = np.array([0.9, 0.8, 0.9])
 
 
-def toJson(boxes, classes, scores, name = 'plateau.json'):
+def toJson(boxes, classes, scores):
 	
 	
-	data = {}  
-	data['plateau'] = []  
+	plateau = {}  
+	plateau['boxes'] = []
+	plateau['date'] = str(datetime.datetime.now()) 
 	
 	for i, elem in enumerate(boxes):
 		
-		data['plateau'].append({  
+		plateau['boxes'].append({  
 			'idBoite': i, #int
 			'typeDechet': classes[i], #int
 			'score': scores[i] #int
 	})
 
-	with open(name, 'w') as outfile:  
-		json.dump(data, outfile, indent = 0)
+	with open('plateau.json', 'w') as outfile:  
+		json.dump(plateau, outfile, indent = 0)	
+		outfile.write("\n")
 		
 toJson(boxesEX, classesEX, scoresEX)
 		
