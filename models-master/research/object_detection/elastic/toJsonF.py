@@ -4,19 +4,21 @@ import datetime
 
 
 def toJson(boxes, classes, scores, name = 'plateau.json'):
-	
+	d = []
 	plateau = {}  
-	plateau['boxes'] = []
+	
 	plateau['date'] = str(datetime.datetime.now()) 
 	
 	for i, elem in enumerate(boxes):
 		
-		plateau['boxes'].append({  
+		d.append({  
 			'idBoite': i, #int
 			'typeDechet': classes[i], #int
 			'score': scores[i] #float
 	})
-
+	
+	plateau['boxes'] = d
+	
 	with open('plateau.json', 'w') as outfile:  
 		json.dump(plateau, outfile, indent = 0)	
 		outfile.write("\n")
