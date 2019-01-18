@@ -21,7 +21,7 @@ def toElastic(boxes, classes, score, category_index =  index, address = default_
 		if( float(score[i]) > 0.5):
 			box = {
 				'Restaurant' : 'RI',
-				'Type de dechet': str(category_index[classes[i]]['name']),
+				'Type de dechet': str(category_index[classes[i]].get('name')),
 				'confidence': float(score[i]),
 				'timestamp': time,
 				'Surface': float((boxes[i][2]-boxes[i][0])*(boxes[i][3]-boxes[i][1]))
