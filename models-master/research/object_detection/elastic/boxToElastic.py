@@ -26,11 +26,11 @@ def toElastic(boxes, classes, score, category_index =  index, address = default_
 				'timestamp': time,
 				'Surface': int((boxes[i][2]-boxes[i][0])*(boxes[i][3]-boxes[i][1]))
 			}
-		print(box)
-		res = es.index(index="surface", doc_type='boite',  body=box)
+			print(box)
+			res = es.index(index="surface", doc_type='boite',  body=box)
 		
 		
 	
 	
 
-#toElastic(boxesEX, classesEX, scoresEX)
+toElastic(boxesEX, classesEX, scoresEX)
