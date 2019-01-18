@@ -19,9 +19,10 @@ def toElastic(boxes, classes, score, category_index =  index, address = default_
 	
 	for i, elem in enumerate(boxes):
 		if( float(score[i]) > 0.5):
+			classDic = json.loads(category_index[classes[i]])
 			box = {
 				'Restaurant' : 'RI',
-				'Type de dechet': category_index[classes[i]].get('name'),
+				'Type de dechet': classDic.get('name'),
 				'confidence': float(score[i]),
 				'timestamp': time,
 				'Surface': float((boxes[i][2]-boxes[i][0])*(boxes[i][3]-boxes[i][1]))
