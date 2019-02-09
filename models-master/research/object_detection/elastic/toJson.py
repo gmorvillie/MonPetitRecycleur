@@ -2,6 +2,8 @@ import json
 import numpy as np
 import datetime
 
+# to load : curl -H "Content-Type:application/json" -XPOST 'http://localhost:9200/plateau/doc/1?pretty' --data-binary @plateau.json
+
 
 
 boxesEX = np.array([[1, 2, 1, 2],[1, 3, 1, 3],[2, 3, 2, 3]]) #boxes coordinates
