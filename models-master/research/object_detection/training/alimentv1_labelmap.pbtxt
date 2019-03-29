@@ -1,0 +1,135 @@
+item {
+  id: 1
+  name: 'Pain'
+}
+
+item {
+  id: 2
+  name: 'viande_rouge'
+}
+
+item {
+  id: 3
+  name: 'viande_blanche'
+}
+
+item {
+  id: 4
+  name: 'poisson'
+}
+
+item {
+  id: 5
+  name: 'legumes'
+}
+
+item {
+  id: 6
+  name: 'peau_de_fruit'
+}
+
+item {
+  id: 7
+  name: 'riz'
+}
+
+item {
+  id: 8
+  name: 'pates'
+}
+
+item {
+  id: 9
+  name: 'patates'
+}
+
+item {
+  id: 10
+  name: 'semoule'
+}
+
+item {
+  id: 11
+  name: 'feculents_autres'
+}
+
+item {
+  id: 12
+  name: 'yahourt'
+}
+
+item {
+  id: 13
+  name: 'fromage'
+}
+
+item {
+  id: 14
+  name: 'salade'
+}
+
+item {
+  id: 15
+  name: 'gateau'
+}
+
+item {
+  id: 16
+  name: 'lasagne'
+}
+
+item {
+  id: 17
+  name: 'pizza_quiche'
+}
+
+item {
+  id: 18
+  name: 'hamburger'
+}
+
+item {
+  id: 19
+  name: 'frite'
+}
+
+item {
+  id: 20
+  name: 'tacos'
+}
+
+item {
+  id: 21
+  name: 'os'
+}
+
+item {
+  id: 22
+  name: 'jambon'
+}
+
+item {
+  id: 23
+  name: 'oeuf'
+}
+
+item {
+  id: 24
+  name: 'omelette'
+}
+
+item {
+  id: 25
+  name: 'fruit'
+}
+
+item {
+  id: 26
+  name: 'nem_samoussa'
+}
+
+item {
+  id: 27
+  name: 'rouleaux_de_printemps'
+}
+
