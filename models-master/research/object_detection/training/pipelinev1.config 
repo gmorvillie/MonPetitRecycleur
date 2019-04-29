@@ -154,12 +154,12 @@ train_config {
       epsilon: 1.0
     }
   }
-  fine_tune_checkpoint: "object_detection/training/training_mobilenet/model.ckpt-9664"
+  fine_tune_checkpoint: "training_mobilenet/model.ckpt-9664"
   from_detection_checkpoint: true
   num_steps: 200000
 }
 train_input_reader {
-  label_map_path: "object_detection/training/alimentv1_labelmap.pbtxt"
+  label_map_path: "alimentv1_labelmap.pbtxt"
   tf_record_input_reader {
     input_path: "alimentv1.record"
   }
