@@ -1,0 +1,21 @@
+item {
+  id: 1
+  name: 'Pain'
+}
+item {
+  id: 2
+  name: 'pates'
+}
+item {
+  id: 3
+  name: 'poisson'
+}
+item {
+  id: 4
+  name: 'legumes'
+}
+item {
+  id: 5
+  name: 'salade'
+}
+
